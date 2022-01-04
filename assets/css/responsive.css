@@ -1,0 +1,85 @@
+/* css tablet */
+
+@media (min-width: 740px) and (max-width: 1023px) {
+}
+
+/* css mobile and tablet */
+@media (max-width: 1023px) {
+  .sub-nav > .sub-nav-item > a {
+    padding: 12px 16px;
+  }
+
+  .contact-location {
+    line-height: 2;
+  }
+  .form-control {
+    padding: 14px;
+  }
+  .btn {
+    padding: 12px 16px;
+  }
+  .socical {
+    font-size: 48px;
+  }
+  .socical a {
+    margin: 0 8px;
+  }
+  .coppy-right {
+    font-size: 18px;
+  }
+  .coppy-right a {
+    padding: 12px 0;
+    display: inline-block;
+  }
+}
+
+/* css mobile */
+
+@media (max-width: 739px) {
+  /* css cho content */
+  .s-full-width,
+  .s-col-full {
+    width: 100%;
+  }
+  .s-mt-8 {
+    margin-top: 8px;
+  }
+  .s-mt-16 {
+    margin-top: 16px;
+  }
+  .s-mt-32 {
+    margin-top: 32px;
+  }
+  #header {
+    overflow: hidden;
+  }
+  .header-seach {
+    display: none;
+  }
+  #header-menu {
+    display: block;
+  }
+  .nav {
+    display: block;
+  }
+  .nav > .nav-item {
+    display: block;
+  }
+  .nav > .nav-item:first-child {
+    display: inline-block;
+  }
+  .nav .sub-nav {
+    position: initial;
+    background-color: #3333;
+  }
+  .nav .sub-nav li {
+    width: 100%;
+  }
+  .nav .sub-nav a {
+    color: #ffff;
+    padding: 14px 40px;
+  }
+  .member-list .member-img {
+    width: 60%;
+  }
+}

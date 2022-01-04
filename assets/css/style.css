@@ -1,0 +1,345 @@
+/* reset css */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 15px;
+  line-height: 1.5;
+  font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* css reponsive */
+
+.row {
+  margin: 0 -8px;
+}
+.row::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.col {
+  padding: 0 8px;
+  float: left;
+}
+
+.col-3 {
+  width: 33.33333%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+/* css chung */
+.mt-8 {
+  margin-top: 8px;
+}
+.mt-16 {
+  margin-top: 16px;
+}
+.mb-16 {
+  margin-bottom: 16px;
+}
+.mb-32 {
+  margin-bottom: 48px;
+}
+.padding-32 {
+  padding: 32px 0;
+}
+.tex-center {
+  text-align: center;
+}
+
+.pull-right {
+  float: right;
+}
+
+/* css class dùng chung */
+
+/* CSS RIÊNG*/
+#wrapper {
+}
+/* css header */
+
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  height: 46px;
+  background-color: #000;
+}
+.nav {
+  display: inline-block;
+}
+.nav > .nav-item {
+  display: inline-block;
+  position: relative;
+}
+
+.nav > .nav-item:hover .sub-nav {
+  display: block;
+}
+
+.nav > .nav-item > a {
+  text-decoration: none;
+  color: #ffff;
+  display: block;
+  line-height: 46px;
+  padding: 1px 24px;
+  text-transform: uppercase;
+}
+
+.nav > .nav-item:hover > a,
+.sub-nav > .sub-nav-item:hover > a {
+  background-color: #ccc;
+  color: #000;
+}
+.sub-nav {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.sub-nav > .sub-nav-item {
+  list-style: none;
+  width: 160px;
+}
+
+.sub-nav > .sub-nav-item > a {
+  color: #000;
+  text-decoration: none;
+  display: block;
+  padding: 8px 16px;
+}
+.nav-item .arrow-down {
+  font-size: 13px;
+}
+.header-seach {
+  float: right;
+  display: inline-block;
+}
+.header-seach:hover {
+  background-color: #f44336;
+}
+#header-menu:hover {
+  background-color: #ccc;
+}
+#header-menu:hover .menu-icon {
+  color: #000;
+}
+#header-menu .menu-icon,
+.header-seach .header-seach-icon {
+  line-height: 46px;
+  color: #fff;
+  padding: 0 24px;
+  font-size: 16px;
+}
+#header-menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: none;
+}
+/* css slider */
+#slider {
+  position: relative;
+  margin-top: 46px;
+  top: 0;
+  left: 0;
+  padding-top: 50%;
+  background: url("../img/slider/slider1.jpg") top center/ cover no-repeat;
+  background-clip: border-box;
+}
+
+.text-content {
+  position: absolute;
+  width: 100%;
+  bottom: 48px;
+  left: 0;
+  text-align: center;
+  color: #fff;
+}
+
+.text-headding {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.text-description {
+  padding-top: 15px;
+}
+
+/* css content */
+.content-section {
+  width: 800px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 64px 16px;
+}
+
+.content-headding {
+  text-align: center;
+  letter-spacing: 4px;
+  font-size: 30px;
+  margin: 10px 0;
+  font-weight: 400;
+}
+.sub-headding {
+  text-align: center;
+  margin: 15px 0;
+  font-style: italic;
+  opacity: 0.6;
+}
+
+.content-des {
+  text-align: justify;
+  margin-bottom: 32px;
+}
+/* css about member */
+.member-name {
+  margin: 15px 0;
+}
+
+.member-list img {
+  width: 154px;
+  border-radius: 4px;
+}
+/* css tour */
+.wapper-content {
+  background-color: #000;
+  color: #fff;
+}
+.tour-list {
+  background-color: #fff;
+  list-style: none;
+}
+
+.tour-item {
+  color: #000;
+  display: block;
+  padding: 8px 16px;
+  border-bottom: 1px solid #ddd;
+  color: #757575;
+}
+.sold-out {
+  color: #fff;
+  background-color: #f44336;
+  margin-left: 16px;
+}
+
+.quantity {
+  float: right;
+  width: 24px;
+  background-color: #000;
+  border-radius: 50%;
+  text-align: center;
+  color: #fff;
+  line-height: 24px;
+  margin-top: -2px;
+}
+.place-list {
+  padding: 16px 0;
+}
+.place-item {
+  width: 100%;
+  display: block;
+  margin-top: 16px;
+}
+.place-item:hover {
+  opacity: 0.6;
+}
+
+.place-infor {
+  background-color: #fff;
+  padding: 0px 16px;
+  color: #000;
+}
+.place-infor > p {
+  padding-top: 15px;
+}
+
+.place-location {
+  font-weight: bold;
+}
+
+.place-date {
+  opacity: 0.6;
+}
+
+.btn {
+  margin: 15px 0;
+  padding: 8px 16px;
+  background-color: #000;
+  color: #fff;
+  display: inline-block;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  text-align: center;
+}
+.btn:hover {
+  color: #000;
+  background-color: #ccc;
+}
+/* css contact */
+.contact-location {
+  font-size: 18px;
+}
+.contact-location-icon {
+  width: 30px;
+  display: inline-block;
+}
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+}
+
+.map {
+  display: block;
+  width: 100%;
+  filter: grayscale(50%);
+}
+/* css footer */
+#footer {
+  background-color: #f1f1f1;
+  padding: 64px 0;
+}
+.socical {
+  text-align: center;
+}
+.socical a {
+  color: #000;
+  font-size: 24px;
+  opacity: 0.7;
+  text-decoration: none;
+}
+.socical a:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+.coppy-right {
+  margin: 15px 0;
+  text-align: center;
+  opacity: 0.8;
+}
+.coppy-right a {
+  color: #000;
+  opacity: 0.6;
+}
